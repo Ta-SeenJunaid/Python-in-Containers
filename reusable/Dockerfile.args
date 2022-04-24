@@ -1,0 +1,5 @@
+FROM python
+WORKDIR /app
+COPY config_reader.py /app/
+ENTRYPOINT ["python", "config_reader.py"]
+CMD ["--color", "pink", "--shape", "hexagon"]
